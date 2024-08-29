@@ -16,4 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(FrontController::class)->group(function(){
     Route::get('/', 'index')->name('home');
+    Route::get('contact_us', 'contactUs')->name('front.contactUs');
+});
+
+Route::get('jazzcash', function(){
+    return view('jazzcash');
 });

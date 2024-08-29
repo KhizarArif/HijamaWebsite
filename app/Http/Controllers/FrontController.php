@@ -17,5 +17,9 @@ class FrontController extends Controller
         return $this->frontendServices->index();
     }
 
+    public function contactUs(Request $request){
+        return $this->frontendServices->contactUs($request);
+    }
+
 
 }

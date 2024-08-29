@@ -92,7 +92,7 @@
 
 <div class="container video_container  ">
     <h1 class="benefit_of_hijama"> Benefits Of Hijama Cupping Therapy </h1>
-    <iframe  src="https://www.youtube.com/embed/dLsGnYjXLC0?si=mKKMRe26HRxOTzoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/dLsGnYjXLC0?si=mKKMRe26HRxOTzoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 
@@ -101,83 +101,127 @@
 
 <!-- Customer Reviews Start-->
 
-    <div class="contianer my-4">
-        <h2 class="review_title" >What Our Clients Say</h2>
-        <p class="review_subtitle">Our Patients are our Spokesperson!</p>
-        <div class="wrapper">
-            <i id="left" class="fa-solid  fas fa-angle-left"></i>
-            <ul class="carousel">
-                @if ($reviews != null)
-                @foreach ($reviews as $review)
-                <li class="card">
-                    <div class="row review_header">
-                        <div class="col-sm-4 col-md-6 card_image_div ">
-                            <img src="{{ asset('front_assets/image/reviews/'.$review->image)}}"
-                                class="card_image" alt="" draggable="false">
-                        </div>
-                        <h6 class="col-sm-8 col-md-6 card_image_name">
-                            {{ $review->name}}
-                        </h6>
+<div class="contianer my-4">
+    <h2 class="review_title">What Our Clients Say</h2>
+    <p class="review_subtitle">Our Patients are our Spokesperson!</p>
+    <div class="wrapper">
+        <i id="left" class="fa-solid  fas fa-angle-left"></i>
+        <ul class="carousel">
+            @if ($reviews != null)
+            @foreach ($reviews as $review)
+            <li class="card">
+                <div class="row review_header">
+                    <div class="col-sm-4 col-md-6 card_image_div ">
+                        <img src="{{ asset('front_assets/image/reviews/'.$review->image)}}"
+                            class="card_image" alt="" draggable="false">
                     </div>
+                    <h6 class="col-sm-8 col-md-6 card_image_name">
+                        {{ $review->name}}
+                    </h6>
+                </div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="w-100 p-4">{{ $review->review }}</p>
-                        </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="w-100 p-4">{{ $review->review }}</p>
                     </div>
+                </div>
 
-                </li>
-                @endforeach
-                @endif
+            </li>
+            @endforeach
+            @endif
 
-            </ul>
-            <i id="right" class="fa-solid fas fa-angle-right"></i>
-        </div>
-
+        </ul>
+        <i id="right" class="fa-solid fas fa-angle-right"></i>
     </div>
+
+</div>
 
 <!-- Customer Reviews End-->
 
 
 <!-- Contact Us Start -->
-<section class="contianer  my-4">
-    <div class="contact-container">
-        <div class="contact-info">
-            <h2>Contact Us</h2>
-            <p>Get in Touch</p>
-            <ul>
-                <li>
-                    <i class="fa fa-whatsapp"></i>
-                    <span>Whatsapp</span>
-                    <p>+923334624627</p>
-                </li>
-                <li>
-                    <i class="fa fa-envelope"></i>
-                    <span>Email</span>
-                    <p>info@hijamacuppinginlahore.com</p>
-                </li>
-                <li>
-                    <i class="fa fa-map-marker"></i>
-                    <span>Locations</span>
-                    <p>Mozang, Lahore</p>
-                    <p>Canal, Lahore</p>
-                </li>
-            </ul>
-        </div>
-        <div class="container contact-form">
-            <form>
-                <input type="text" name="name" placeholder="Name">
-                <input type="text" name="phone" placeholder="Phone">
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea name="message" placeholder="Message"></textarea>
-                <button type="submit">Send Message</button>
+<section class="contact_container">
+    <div class="row ">
+        <div class="col-md-6">
+            <form action="" class="contact_form" id="contact_form">
+                <div class="form_group">
+                    <label for="" class="form-label labels"> Your Name (required) </label>
+                    <input type="text" name="name" id="name" class="form_control">
+                </div>
+                <div class="form_group">
+                    <label for="" class="form-label labels"> Your Email (required) </label>
+                    <input type="email" name="email" id="email" class="form_control">
+                </div>
+                <div class="form_group">
+                    <label for="" class="form-label labels"> Subject </label>
+                    <input type="text" name="subject" id="subject" class="form_control">
+                </div>
+                <div class="form_group">
+                    <label for="" class="form-label labels"> Your Message </label>
+                    <textarea type="text" cols="40" rows="10" name="message" id="message" class="form_control"> </textarea>
+                </div>
+                <button class="submit_contact_btn">SEND</button>
             </form>
         </div>
+        <div class="col-md-6 d-flex flex-column justify-content-around">
+            <div class="contact_info" >
+                <h1> Working Hours </h1>
+                <p>Working hours: 9am – 5pm on weekdays</p>
+            </div>
+            <div class="contact_info">
+                <h1> Address </h1>
+                <p>
+                <a href="https://www.google.com/maps/place/Hijama+Faisalabad+Center(+Cupping+Clinic+)/@31.415272,73.0705506,17z/data=!3m1!4b1!4m6!3m5!1s0x392243be3daeda27:0x944226de516de190!8m2!3d31.415272!4d73.0731255!16s%2Fg%2F11pq2c8cq6?entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"  >
+                    Address Hijama Faisalabad Center( Cupping Clinic ), Corner St. No 4,
+                     Main Imambargah Road, Outside, Jhang Bazar, Santpura, Faisalabad,
+                     Pakistan
+                </a>
+                </p>
+            </div>
+            <div class="contact_info">
+                <h1>Contact Us </h1>
+                <p>
+                (+92) 3336507744
+                (+92) 3216507744
+                </p>
+            </div>
+        </div>
     </div>
+    <!-- <div class="contact_container">
+
+    </div> -->
 </section>
 
 <!-- Contact Us End -->
 
 
 
+@endsection
+
+
+@section('customJs')
+        <script>
+            $("#contact_form").submit(function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: "{{ route('front.contactUs') }}",
+                    method: "post",
+                    data: {
+                        name: $("#name").val(),
+                        email: $("#email").val(),
+                        subject: $("#subject").val(),
+                        message: $("#message").val(),
+                    },
+                    success: function(data) {
+                        if (data.success == true) {
+                            $("#contact_form")[0].reset();
+                            alert(data.message);
+                        } else {
+                            alert(data.message);
+                        }
+                    }
+                })
+            })
+        </script>
 @endsection

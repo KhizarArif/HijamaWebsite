@@ -360,8 +360,6 @@
     border: 1px solid #c0b4b4;
 }
 
-
-
 .card_image{
     border-radius: 50%;
     width: 100px;
@@ -375,121 +373,78 @@
     justify-content: space-between;
  }
 
+ /* Contact Us Start  */
 
- /* Contact Us  Start*/
+ .contact_container{
+     margin: auto;
+     margin-bottom: 2rem;
+    width: 80%;
+ }
 
 
-.contact-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contact-info {
-    flex: 1;
-    margin-right: 40px;
-}
-
-.contact-info h2 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.contact-info p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.contact-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-info ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.contact-info ul li i {
-    font-size: 24px;
-    color: #25D366; /* WhatsApp color */
-    margin-right: 10px;
-}
-
-.contact-info ul li span {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-right: 10px;
-}
-
-.contact-info ul li p {
-    font-size: 14px;
-    color: #666;
-    margin: 0;
-}
-
-.contact-form {
-    flex: 1;
-}
-
-.contact-form form {
+ .contact_form{
     display: flex;
     flex-direction: column;
-}
-
-.contact-form input,
-.contact-form textarea {
+    gap: 1rem;
+    justify-content: space-between;
+ }
+ .form_group{
+    display: flex;
+    flex-direction: column;
+ }
+ .labels{
+    font-family: "Varela Round", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+ }
+ .form_control{
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #f7faf5;
-    font-size: 14px;
-    color: #666;
-}
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background: #EFEFEF;
+ }
 
-.contact-form button {
-    padding: 12px 20px;
-    background-color: #ff7f50; /* Button color */
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
+ .form_control:focus{
+    outline: 1px solid #66AFE9;
+ }
+
+ .submit_contact_btn{
+    width: 25%;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #6AC28B;
+    border-radius: 10px;
     cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #ff6633; /* Darker shade on hover */
-}
-
-/* Additional styling for mobile responsiveness */
-@media screen and (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .contact-info {
-        margin: 0 0 20px 0;
-    }
-
-    .contact-form {
-        width: 100%;
-    }
-}
- /* Contact Us  End*/
+    color: #fff;
+    font-weight: bold;
+ }
 
 
+ .contact_info{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .contact_info h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+ }
+
+ .contact_info p {
+    width: 90%;
+    text-align: center;
+ }
+
+ .contact_info p a{
+    color: #000;
+ }
 
 
-
+ /* Contact Us End  */
 
 
  /* Media query */

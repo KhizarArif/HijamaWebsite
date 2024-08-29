@@ -121,6 +121,8 @@
     });
 </script>
 
+@yield('customJs')
+
 
 </body>
 
