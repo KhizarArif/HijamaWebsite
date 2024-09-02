@@ -16,9 +16,8 @@ class UserAuthentication
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::check()){
-            if(Auth::user()->role == 'admin'){
-                dd("true");
+        if(Auth::check()){ 
+            if(Auth::user()->role == 'admin'){ 
                 return $next($request);
             }else{
                 return redirect()->route('admin.login')->with('error', 'You are not authorized to access this site.');

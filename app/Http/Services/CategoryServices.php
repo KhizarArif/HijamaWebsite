@@ -5,13 +5,12 @@ namespace App\Http\Services;
 use App\Models\Review;
 use Illuminate\Support\Facades\Validator;
 
-class AdminServices
+class CategoryServices
 {
     public function index()
-    {
-        return view('admin.dashboards');
+    { 
+        return view('admin.category.index');
     }
 
-
-
+ 
 }

@@ -13,6 +13,7 @@
         <div class="card">
             <div class="card2">
                 <form class="form" method="POST" id="admin_login_form" action="{{ route('admin.authenticate') }}">
+                    @csrf
                     <p id="heading">Login</p>
                     <div class="field">
                         <svg
