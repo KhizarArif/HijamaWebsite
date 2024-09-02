@@ -7,7 +7,7 @@
 
                 <div class="row d-flex align-items-center  ">
                     <div class="col-md-10">
-                        <h4> Categories </h4>
+                        <h4> Products </h4>
                     </div>
                     <div class="col-md-2">
                         <div class="card m-0">
@@ -80,7 +80,7 @@
 @section('customJs')
 <script>
     function addCategoryPage() {
-        window.location.href = "{{ route('categories.create') }}";
+        window.location.href = "{{ route('product.create') }}";
     }
 </script>
 @endsection

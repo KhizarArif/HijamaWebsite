@@ -31,8 +31,7 @@ class AdminAuthServices
                 } else {
                     return redirect()->route('admin.login')->with('error', 'You are not an authenticated person to access this site.');
                 }
-            } else {
-                dd("Login");
+            } else { 
                 return redirect()->route('admin.login')->with('error', 'Email or Password is incorrect');
             }
         }

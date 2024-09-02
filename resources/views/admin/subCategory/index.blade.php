@@ -80,7 +80,7 @@
 @section('customJs')
 <script>
     function addCategoryPage() {
-        window.location.href = "{{ route('categories.create') }}";
+        window.location.href = "{{ route('subcategories.create') }}";
     }
 </script>
 @endsection
